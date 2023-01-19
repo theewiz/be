@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beTogether</title>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Nav Starts -->
+  <nav>
+    <div class="container">
+      <h2 class="logo">be⁀Together</h2>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search for creators, inspirations and projects">
+      </div>
+
+      <div class="create-profile">
+        <label for="create-post" class="btn btn-primary">
+          Create
+        </label>
+        <div class="profile-photo">
+          <img src="./images/1st.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav Ends -->
+
+
+  <!-- Main Starts -->
+  <main>
+    <div class="container">
+      <!-- ===== Left Starts ===== -->
+      <div class="left">
+        <!-- Profile -->
+        <div class="profile-info">
+          <div class="profile-photo">
+            <img src="./images/1st.svg" alt="">
+          </div>
+
+          <div class="profile-text">
+            <h4>Yemisi Adaugo</h4>
+            <p>@yemmyAd</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <a class="sidebar-link active">
+            <i class="fa-solid fa-house"></i>
+            <h4>Home</h4>
+          </a>
+
+          <a class="sidebar-link">
+            <i class="fa-solid fa-compass"></i>
+            <h4>Explore</h4>
+          </a>
+
+          <a class="sidebar-link notification" id="notification">
+            <i class="fa-solid fa-bell"><small class="small">5+</small></i>
+            <h4>Notifications</h4>
+            <!-- Notification Popup -->
+            <div class="popup active">
+              <div class="popup-details">
+                <div class="profile-photo">
+                  <img src="./images/8th.svg" alt="">
+                </div>
+
+                <div class="popup-text">
+                  <p><b>Chima Onyeka</b> accepted your friend request</p>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+
+              <div class="popup-details">
+                <div class="profile-photo">
+                  <img src="./images/2nd.svg" alt="">
+                </div>
+
+                <div class="popup-text">
+                  <p><b>Sarah Kumar</b> accepted your friend request</p>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+
+              <div class="popup-details">
+                <div class="profile-photo">
+                  <img src="./images/7th.svg" alt="">
+                </div>
+
+                <div class="popup-text">
+                  <p><b>Obi Bright</b> accepted your friend request</p>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+
+              <div class="popup-details">
+                <div class="profile-photo">
+                  <img src="./images/4th.svg" alt="">
+                </div>
+
+                <div class="popup-text">
+                  <p><b>Thelma Gianni</b> accepted your friend request</p>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+
+              <div class="popup-details">
+                <div class="profile-photo">
+                  <img src="./images/9th.svg" alt="">
+                </div>
+
+                <div class="popup-text">
+                  <p><b>Xhosi Ngolongo</b> accepted your friend request</p>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+
+            </div>
+          </a>
+
+          <a class="sidebar-link messageSidebar" id="messages">
+            <i class="fa-solid fa-envelope"><small class="tag">9+</small></i>
+            <h4>Messages</h4>
+          </a>
+
+          <a class="sidebar-link">
+            <i class="fa-solid fa-bookmark"></i>
+            <h4>Bookmarks</h4>
+          </a>
+
+          <a class="sidebar-link">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Analytics</h4>
+          </a>
+
+          <a class="sidebar-link theme">
+            <i class="fa-solid fa-palette"></i>
+            <h4>Theme</h4>
+          </a>
+
+          <a class="sidebar-link">
+            <i class="fa-solid fa-gear"></i>
+            <h4>Settings</h4>
+          </a>
+        </div>
+
+        <!-- Bottom Button -->
+        <div class="create-post">
+          <label for="create-post" class="btn btn-primary">
+            Create Post
+          </label>
+        </div>
+      </div>
+
+
+      <!-- ===== Left Ends ===== -->
+
+      <!-- ===== Middle Starts ===== -->
+      <div class="middle">
+        <!-- Stories Starts -->
+        <div class="stories">
+          <div class="story">
+            <img src="./images/pexels-tarzine-jackson-773371.jpg" alt="">
+            <small>Your story</small>
+          </div>
+
+          <div class="story">
+            <img src="./images/f.jpg" alt="">
+            <small>Bisola Adams</small>
+          </div>
+
+          <div class="story">
+            <img src="./images/e.jpg" alt="">
+            <small>Nick Felopini</small>
+          </div>
+
+          <div class="story">
+            <img src="./images/pexels-christina-morillo-1181519.jpg" alt="">
+            <small>Chinasa Okoli</small>
+          </div>
+
+          <div class="story">
+            <img src="./images/pexels-andrea-piacquadio-733872.jpg" alt="">
+            <small>Alexa Nicoli</small>
+          </div>
+        </div>
+        <!-- Stories Ends -->
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="img-input">
+            <img src="./images/7th.svg" alt="">
+            <input type="text" name="" id="input-search-text" placeholder="What's on your mind Jake?"
+              class="input-search-text">
+          </div>
+          <label for="create-post" class="btn btn-primary">Post</label>
+        </div>
+
+        <!-- Post Ends -->
+
+        <!-- Feeds Starts -->
+
+        <div class="feeds">
+          <!-- Feed 1 -->
+          <div class="feed">
+            <div class="feeds-img-text-icon">
+              <div class="feeds-text-img">
+                <div class="feeds-img">
+                  <img src="./images/4th.svg" alt="">
+                </div>
+                <div class="feeds-text">
+                  <h4>Leah Beri</h4>
+                  <small>Durbar, 12mins ago</small>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis ellipsis"></i>
+            </div>
+
+            <div class="feed-img">
+              <img src="./images/pexels-yan-krukau-8199608.jpg" alt="">
+            </div>
+
+            <div class="feed-icon">
+              <div class="icon-1">
+                <i class="fa-solid fa-heart fa--icon"></i>
+                <i class="fa-solid fa-comment fa--icon"></i>
+                <i class="fa-sharp fa-solid fa-share-nodes fa--icon"></i>
+              </div>
+              <div class="icon-2">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+
+            <div class="feed-bottom">
+              <div class="feed-bottom-img-text">
+                <div class="feed-bottom-img">
+                  <img src="./images/9th.svg" alt="">
+                  <img src="./images/3rd.svg" alt="">
+                  <img src="./images/6th.svg" alt="">
+                </div>
+
+                <p>Liked by <span>Moses Barry</span> and <span>2397 others</span></p>
+              </div>
+
+              <div class="feed-bottom-texxt">
+                <p><span>Matt Wise</span> Lorem ipsum dolor consectetur adipisicing elit. Nulla, nobis. #lifestyle</p>
+                <small>View all 277 comments</small>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Feed 2 -->
+          <div class="feed">
+            <div class="feeds-img-text-icon">
+              <div class="feeds-text-img">
+                <div class="feeds-img">
+                  <img src="./images/9th.svg" alt="">
+                </div>
+                <div class="feeds-text">
+                  <h4>Mathong Za</h4>
+                  <small>Lagos, 29mins ago</small>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis ellipsis"></i>
+            </div>
+
+            <div class="feed-img">
+              <img src="./images/pexels-yunus-tuğ-14494141.jpg" alt="">
+            </div>
+
+            <div class="feed-icon">
+              <div class="icon-1">
+                <i class="fa-solid fa-heart fa--icon"></i>
+                <i class="fa-solid fa-comment fa--icon"></i>
+                <i class="fa-sharp fa-solid fa-share-nodes fa--icon"></i>
+              </div>
+              <div class="icon-2">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+
+            <div class="feed-bottom">
+              <div class="feed-bottom-img-text">
+                <div class="feed-bottom-img">
+                  <img src="./images/2nd.svg" alt="">
+                  <img src="./images/8th.svg" alt="">
+                  <img src="./images/7th.svg" alt="">
+                </div>
+
+                <p>Liked by <span>Willow MacAmon</span> and <span>347 others</span></p>
+              </div>
+
+              <div class="feed-bottom-texxt">
+                <p><span>Sarah Alfredo</span> Lorem ipsum dolor consectetur adipisicing elit. Nulla, nobis. #lifestyle
+                </p>
+                <small>View all 324 comments</small>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Feed 3 -->
+          <div class="feed">
+            <div class="feeds-img-text-icon">
+              <div class="feeds-text-img">
+                <div class="feeds-img">
+                  <img src="./images/5th.svg" alt="">
+                </div>
+                <div class="feeds-text">
+                  <h4>Siginle Anna</h4>
+                  <small>Kigali, 42mins ago</small>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis ellipsis"></i>
+            </div>
+
+            <div class="feed-img">
+              <img src="./images/pexels-helena-lopes-708440.jpg" alt="">
+            </div>
+
+            <div class="feed-icon">
+              <div class="icon-1">
+                <i class="fa-solid fa-heart fa--icon"></i>
+                <i class="fa-solid fa-comment fa--icon"></i>
+                <i class="fa-sharp fa-solid fa-share-nodes fa--icon"></i>
+              </div>
+              <div class="icon-2">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+
+            <div class="feed-bottom">
+              <div class="feed-bottom-img-text">
+                <div class="feed-bottom-img">
+                  <img src="./images/2nd.svg" alt="">
+                  <img src="./images/8th.svg" alt="">
+                  <img src="./images/7th.svg" alt="">
+                </div>
+
+                <p>Liked by <span>Bob Mathieu</span> and <span>8767 others</span></p>
+              </div>
+
+              <div class="feed-bottom-texxt">
+                <p><span>Obi Sanchez</span> Lorem ipsum dolor consectetur adipisicing elit. Nulla, nobis. #lifestyle</p>
+                <small>View all 978 comments</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feed 4 -->
+          <div class="feed">
+            <div class="feeds-img-text-icon">
+              <div class="feeds-text-img">
+                <div class="feeds-img">
+                  <img src="./images/8th.svg" alt="">
+                </div>
+                <div class="feeds-text">
+                  <h4>Simeon Wells</h4>
+                  <small>Nairobi, 1hr 30mins ago</small>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis ellipsis"></i>
+            </div>
+
+            <div class="feed-img">
+              <img src="./images/pexels-daniel-xavier-908602.jpg" alt="">
+            </div>
+
+            <div class="feed-icon">
+              <div class="icon-1">
+                <i class="fa-solid fa-heart fa--icon"></i>
+                <i class="fa-solid fa-comment fa--icon"></i>
+                <i class="fa-sharp fa-solid fa-share-nodes fa--icon"></i>
+              </div>
+              <div class="icon-2">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+
+            <div class="feed-bottom">
+              <div class="feed-bottom-img-text">
+                <div class="feed-bottom-img">
+                  <img src="./images/2nd.svg" alt="">
+                  <img src="./images/8th.svg" alt="">
+                  <img src="./images/7th.svg" alt="">
+                </div>
+
+                <p>Liked by <span>Sasha</span> and <span>607 others</span></p>
+              </div>
+
+              <div class="feed-bottom-texxt">
+                <p><span>Trey Vands</span> Lorem ipsum dolor consectetur adipisicing elit. Nulla, nobis. #lifestyle</p>
+                <small>View all 871 comments</small>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Feed 5 -->
+          <div class="feed">
+            <div class="feeds-img-text-icon">
+              <div class="feeds-text-img">
+                <div class="feeds-img">
+                  <img src="./images/6th.svg" alt="">
+                </div>
+                <div class="feeds-text">
+                  <h4>Martha Ola </h4>
+                  <small>Enugu, 2hrs 40mins ago</small>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis ellipsis"></i>
+            </div>
+
+            <div class="feed-img">
+              <img src="./images/Teslim.jpg" alt="">
+            </div>
+
+            <div class="feed-icon">
+              <div class="icon-1">
+                <i class="fa-solid fa-heart fa--icon"></i>
+                <i class="fa-solid fa-comment fa--icon"></i>
+                <i class="fa-sharp fa-solid fa-share-nodes fa--icon"></i>
+              </div>
+              <div class="icon-2">
+                <i class="fa-solid fa-bookmark"></i>
+              </div>
+            </div>
+
+            <div class="feed-bottom">
+              <div class="feed-bottom-img-text">
+                <div class="feed-bottom-img">
+                  <img src="./images/2nd.svg" alt="">
+                  <img src="./images/8th.svg" alt="">
+                  <img src="./images/7th.svg" alt="">
+                </div>
+
+                <p>Liked by <span>Claire Underwood</span> and <span>9034 others</span></p>
+              </div>
+
+              <div class="feed-bottom-texxt">
+                <p><span>Anuli Maduka</span> Lorem ipsum dolor consectetur adipisicing elit. Nulla, nobis. #lifestyle
+                </p>
+                <small>View all 1001 comments</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Feeds Ends -->
+      </div>
+      <!-- ===== Middle Ends ===== -->
+
+      <!-- ===== Right Starts ===== -->
+      <div class="right">
+        <!-- Messages Starts -->
+        <div class="messages">
+
+          <div class="message-edit">
+            <h4>Messages</h4>
+            <i class="fa-solid fa-pen-to-square edit"></i>
+          </div>
+
+          <div class="message-search" id="search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search messages" class="search">
+          </div>
+
+          <div class="message-title">
+            <h5 class="active">Primary</h5>
+            <h5>General</h5>
+            <h5 class="request">Requests(7)</h5>
+          </div>
+
+          <div class="message-list">
+            <!-- List 1 -->
+            <div class="mess">
+              <img src="./images/5th.svg" alt="">
+              <div class="text">
+                <h5 class="upper">Chinelo George</h5>
+                <p class="lower">Took the dog out!</p>
+              </div>
+            </div>
+
+            <!-- List 2 -->
+            <div class="mess">
+              <img src="./images/8th.svg" alt="">
+              <div class="text">
+                <h5 class="upper">Steve Burns</h5>
+                <p class="lower">We'll be there tomorrow</p>
+              </div>
+            </div>
+
+            <!-- List 3 -->
+            <div class="mess">
+              <img src="./images/3rd.svg" alt="">
+              <div class="text">
+                <h5 class="upper">Vanessa Davies</h5>
+                <p class="lower">Hey pal!</p>
+              </div>
+            </div>
+
+            <!-- List 4 -->
+            <div class="mess">
+              <img src="./images/9th.svg" alt="">
+              <div class="text">
+                <h5 class="upper">Pieters Baker</h5>
+                <p class="lower">How fast does this run?</p>
+              </div>
+            </div>
+
+            <!-- List 5 -->
+            <div class="mess">
+              <img src="./images/1st.svg" alt="">
+              <div class="text">
+                <h5 class="upper">Chanell Ourer</h5>
+                <p class="lower">ok</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Messages Ends -->
+
+        <!-- Requests Starts -->
+        <div class="requests">
+          <h4>Requests</h4>
+
+          <div class="img-text-btn">
+            <i class="fa-solid fa-xmark cancel"></i>
+            <div class="img-text">
+              <img src="./images/7th.svg" alt="">
+              <div class="textt">
+                <h5>Musa Kembi</h5>
+                <p>3 mutual friends</p>
+              </div>
+            </div>
+
+            <div class="btns">
+              <label for="accept" class="btn btn-primary">Accept</label>
+              <label for="decline" class="btnn btnn-primary">Decline</label>
+            </div>
+          </div>
+
+          <div class="img-text-btn">
+            <i class="fa-solid fa-xmark cancel"></i>
+            <div class="img-text">
+              <img src="./images/2nd.svg" alt="">
+              <div class="textt">
+                <h5>Jenny Amadi</h5>
+                <p>17 mutual friends</p>
+              </div>
+            </div>
+
+            <div class="btns">
+              <label for="accept" class="btn btn-primary">Accept</label>
+              <label for="decline" class="btnn btnn-primary">Decline</label>
+            </div>
+          </div>
+
+        </div>
+        <!-- Requests Ends -->
+      </div>
+      <!-- ===== Right Ends ===== -->
+    </div>
+
+
+
+    <!-- ===== Theme Customization Starts ===== -->
+    <div class="modal active">
+      <div class="customize-content">
+        <i class="fa-solid fa-xmark canceel fa-2x"></i>
+
+        <!-- Main Text starts -->
+        <div class="text">
+          <h2>Customize your view</h2>
+          <p>Manage your font size, color, and background.</p>
+        </div>
+
+        <!-- Font size starts -->
+        <div class="font-size">
+          <h4>Font</h4>
+          <div class="sizes">
+            <h6>Aa</h6>
+            <div class="pick-size">
+              <span class="size-1 active"></span>
+              <span class="size-2"></span>
+              <span class="size-3"></span>
+              <span class="size-4"></span>
+              <span class="size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+        </div>
+
+        <!-- Color starts -->
+        <div class="color-theme">
+          <h4>Color</h4>
+          <div class="colors">
+            <span class="color-1 active"></span>
+            <span class="color-2 "></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+
+        <!-- Background starts -->
+        <div class="background">
+          <h4>Background</h4>
+
+          <div class="bg">
+            <div class="bg-1">
+              <div class="ring"></div>
+              <p>Light</p>
+            </div>
+
+            <div class="bg-2">
+              <div class="ring one"></div>
+              <p>Dim</p>
+            </div>
+
+            <div class="bg-3">
+              <div class="ring one"></div>
+              <p>Dark</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Theme Customization Ends ===== -->
+
+  </main>
+  <!-- Main Ends -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
